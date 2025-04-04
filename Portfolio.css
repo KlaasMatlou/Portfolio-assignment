@@ -1,0 +1,119 @@
+main{
+    float: left;
+    display:flow-root
+}
+nav{
+    background-color: rgba(47, 79, 79, 0.205);
+    height: 50px;
+    text-align: center;
+    font-size: 1.5em;
+}
+.navbar a{
+    overflow: hidden;
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    display: inline;
+}
+.navbar a:hover{
+    background-color: rgb(85, 83, 83);
+    color: darkgrey;
+}
+aside{
+    color: rgba(3, 3, 3, 0.877);
+    font-style: italic;
+    float: left;
+    padding: 20px;
+    margin-top: 10px;
+    width: 20%;
+}
+section{
+    color: rgba(3, 3, 3, 0.877);
+    float: left;
+    display: inline;
+    width: 40%;
+    
+}
+article{
+    color: rgba(3, 3, 3, 0.877);
+    float: left;
+    display:inline;
+    width: fit-content;
+    
+}
+.animated-element{
+    float: right;
+}
+.animated-element {
+    animation-name: slide-in;
+    animation-duration: 2.5s;
+    animation-iteration-count:calc(5)
+
+  }
+  
+  @keyframes slide-in {
+    from {
+      translate: 100vw 0;
+      scale: 100% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+  
+footer{
+    clear: both;
+    background-color: rgba(47, 79, 79, 0.205);
+}
+body{
+    color: rgba(39, 1, 255, 0.034), (42, 192, 0.87);
+    background-color: rgba(192, 192, 192, 0.986);
+    background-image: url(images/clean-cement-built-structure-white-background-copy-space.jpg);
+    filter: brightness(-100);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1::first-letter{
+    font-size: 2em;
+    background-color: #ff6730;
+    text-shadow: 1px 3px 5px red, 2px 4px 5px rgb(4, 4, 241);
+} 
+aside li:hover{
+    color: rgba(139, 255, 24, 0.253);
+    background-color: rgb(185, 182, 178);
+    font-size: 1.2em;
+}
+article li:hover{
+    color: rgba(139, 255, 24, 0.253);
+    background-color: rgb(185, 182, 178);
+    font-size: 1.2em;
+}
+section li:hover{
+    color: rgba(139, 255, 24, 0.253);
+    background-color: rgb(185, 182, 178);
+    font-size: 1.2em;
+}
+
+form{
+    padding: 20px;
+    text-align:left;
+    font-size: larger;
+    justify-content: space-evenly
+}
+input{
+    border: 2px solid grey;
+    border-radius: 15px;
+    width: 200px;
+    height: 25px;
+}
+textarea{
+    border: 2px solid grey;
+    border-radius: 15px;
+}
+input::placeholder{
+    color: rgb(84, 84, 88);
+}
